@@ -18,3 +18,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.input {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(11, 11, 106);
+    color: #fff;
+    padding: 10px;
+}
