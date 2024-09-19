@@ -13,3 +13,8 @@ body {
     max-width: 500px;
     padding: 20px;
 }
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+}
