@@ -45,3 +45,15 @@ body {
 .alerta.show {
     display: block;
 }
+
+.sucesso {
+    background-color: green;
+    color: #fff;
+    display: none;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.sucesso.show {
+    display: block;
+}

@@ -8,6 +8,7 @@ const txtEmail = document.getElementById("txtEmail"); // referência para o camp
 const txtSenha = document.getElementById("txtSenha"); // referência para o campo de senha
 const alerta = document.getElementById("alerta");
 const msgErro = document.getElementById("msgErro"); 
+const sucesso = document.getElementById("sucesso");
 
 function showErrorMessage(message) {
     msgErro.innerText = message;
@@ -53,7 +54,11 @@ formLogin.addEventListener("submit", function(event) {
     // caso não seja, apresentar uma mensagem de erro ao usuário
     // caso seja, apresentar uma mensagem de login efetuado com sucesso
 
-    alert('Login efetuado com sucesso!');
     // esconder a mensagem de erro
-    
+    alerta.classList.remove("show");
+    sucesso.classList.add("show");
+
+    setTimeout(function(){
+        sucesso.classList.remove("show");
+    }, 5000);
 });
